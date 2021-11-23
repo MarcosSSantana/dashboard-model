@@ -8,6 +8,8 @@
  </script>
  <!-- Bootstrap 4 -->
  <script src="tema/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <!-- Select2 -->
+<script src="tema/plugins/select2/js/select2.full.min.js"></script>
  <!-- ChartJS -->
  <script src="tema/plugins/chart.js/Chart.min.js"></script>
  <!-- <script>
@@ -54,7 +56,7 @@
  <script src="tema/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
  <!-- InputMask -->
-<script src="tema/plugins/moment/moment.min.js"></script>
+<!-- <script src="tema/plugins/moment/moment.min.js"></script> -->
 <script src="tema/plugins/inputmask/jquery.inputmask.min.js"></script>
 <!-- Bootstrap Switch -->
 <script src="tema/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
@@ -63,5 +65,4 @@
  <script src="tema/dist/js/adminlte.js"></script>
  <!-- AdminLTE for demo purposes -->
  <script src="tema/dist/js/demo.js"></script>
- <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
- <script src="tema/dist/js/pages/dashboard.js"></script>
+

@@ -781,7 +781,7 @@
 <script>
 window.addEventListener("load", function(event) {
     // setTimeout(() => {
-    console.log("Todos os recursos terminaram o carregamento!");
+    // console.log("Todos os recursos terminaram o carregamento!");
     $('#example2').DataTable({
         "paging": true,
         "lengthChange": false,
@@ -800,46 +800,46 @@ window.addEventListener("load", function(event) {
     $('#datemask').inputmask('dd/mm/yyyy', {
         'placeholder': 'dd/mm/yyyy'
     })
-    //Datemask2 mm/dd/yyyy
-    // $('#datemask2').inputmask('mm/dd/yyyy', {
-    //     'placeholder': 'mm/dd/yyyy'
-    // })
-    // }, 500);
-       //Date picker
-       $('#reservationdate').datetimepicker({
+
+    //Date picker
+    $('#reservationdate').datetimepicker({
         format: 'L'
     });
 
     //Date and time picker
-    $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+    $('#reservationdatetime').datetimepicker({
+        icons: {
+            time: 'far fa-clock'
+        }
+    });
 
     //Date range picker
     $('#reservation').daterangepicker()
     //Date range picker with time picker
     $('#reservationtime').daterangepicker({
-      timePicker: true,
-      timePickerIncrement: 30,
-      locale: {
-        format: 'MM/DD/YYYY hh:mm A'
-      }
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+            format: 'MM/DD/YYYY hh:mm A'
+        }
     })
     //Date range as a button
-    $('#daterange-btn').daterangepicker(
-      {
-        ranges   : {
-          'Hoje'       : [moment(), moment()],
-          'Ontem'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-          'Últimos 7 dias' : [moment().subtract(6, 'days'), moment()],
-          'Últimos 30 dias': [moment().subtract(29, 'days'), moment()],
-          'Este mês'  : [moment().startOf('month'), moment().endOf('month')],
-          'Mês passado'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+    $('#daterange-btn').daterangepicker({
+            ranges: {
+                'Hoje': [moment(), moment()],
+                'Ontem': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Últimos 7 dias': [moment().subtract(6, 'days'), moment()],
+                'Últimos 30 dias': [moment().subtract(29, 'days'), moment()],
+                'Este mês': [moment().startOf('month'), moment().endOf('month')],
+                'Mês passado': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1,
+                    'month').endOf('month')]
+            },
+            startDate: moment().subtract(29, 'days'),
+            endDate: moment()
         },
-        startDate: moment().subtract(29, 'days'),
-        endDate  : moment()
-      },
-      function (start, end) {
-        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-      }
+        function(start, end) {
+            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+        }
     )
 
 });

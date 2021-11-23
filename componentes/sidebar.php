@@ -37,7 +37,7 @@
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item menu-open">
-              <a href="#" class="nav-link active">
+              <a href="#" class="nav-link ">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Dashboard
@@ -47,7 +47,7 @@
               <ul class="nav nav-treeview">
 
                 <li class="nav-item">
-                  <a href="index.php" class="nav-link active">
+                  <a href="index.php" class="nav-link ">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Dashboard v1</p>
                   </a>
@@ -56,6 +56,12 @@
                   <a href="?menu=Cadastro" class="nav-link ">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Cadastro</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="?menu=Articulista" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Articulista</p>
                   </a>
                 </li>
               </ul>

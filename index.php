@@ -60,6 +60,9 @@
                   case "Cadastro":
                     include 'views/cadastro.php';
                     break;
+                  case "Articulista":
+                    include 'views/articulista.php';
+                    break;
                   default:
                     include 'views/inicio.php';
                 }
