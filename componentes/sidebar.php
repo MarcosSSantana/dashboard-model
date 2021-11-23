@@ -45,13 +45,19 @@
                 </p>
               </a>
               <ul class="nav nav-treeview">
+
                 <li class="nav-item">
-                  <a href="#" class="nav-link active">
+                  <a href="index.php" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Dashboard v1</p>
                   </a>
                 </li>
-               
+                <li class="nav-item">
+                  <a href="?menu=Cadastro" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Cadastro</p>
+                  </a>
+                </li>
               </ul>
             </li>
         
